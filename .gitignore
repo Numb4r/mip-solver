@@ -1,0 +1,7 @@
+.idea/
+cmake-build-*/
+build/
+
+collection*
+mipdownloader/miplib2017-selected
+.vscode
