@@ -5,3 +5,4 @@ build/
 collection*
 mipdownloader/miplib2017-selected
 .vscode
+output/

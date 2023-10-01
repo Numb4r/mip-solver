@@ -18,7 +18,7 @@ async def list_files(update: Update, context: CallbackContext):
     try:
         files = subprocess.run(["ls", folder_path], stdout=subprocess.PIPE, text=True)
         
-        await update.message.reply_text(f"Arquivos em {folder_path} ({len(problemas)}):\n\n{files.stdout}")
+        await update.message.reply_text(f"Arquivos em {folder_path}:\n\n{files.stdout}")
     except FileNotFoundError:
         await update.message.reply_text(f"Pasta {folder_path} não encontrada.")
 
